@@ -1,0 +1,110 @@
+
+
+body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-size:15px;
+    flex-direction: column;
+    font-family: "poppins", sans-serif;
+    color:hsl(229, 6%, 66%);
+    gap:20px;
+    background-color: hsl(0, 0%, 98%);
+}
+* {
+    margin:0;
+    padding:0;
+}
+.container {
+    width:1300px;
+    display: flex;
+    flex-direction: column;   
+    margin:60px;
+    align-items: center;
+    gap: 60px;
+}
+header {
+   text-align: center;
+   width:500px;
+}
+header span {
+    font-size: 2rem;
+    font-weight: 600;
+    color:hsl(234, 12%, 34%);
+}
+header h1 {
+    font-weight: 200;
+    font-size:2rem;
+    color:hsl(234, 12%, 34%);
+}
+
+header p {
+    margin-top:20px;
+    font-weight: 400;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+.card {
+    width:400px;
+    height:300px;
+    border-radius: 8px;
+    border-top: 5px solid ;
+    box-sizing: border-box;
+    padding: 35px;
+    box-shadow: 0 20px 20px 5px hsl(229, 6%, 66%);
+    text-align: right;
+    background-color: #fff;
+}
+.card-text {
+    text-align: left;
+    margin-bottom: 50px;
+}
+.card-text h2 {
+    color:hsl(234, 12%, 34%);
+    margin-bottom: 10px;
+}
+.middle-row {
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+.builder {
+    border-color: hsl(0, 78%, 62%);
+}
+.supervisor {
+    border-color: hsl(180, 62%, 55%);
+}
+.karma {
+    border-color: hsl(34, 97%, 64%);
+}
+.calculator{
+    border-color: hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width:375px) {
+
+    body {
+        width:375px;
+    }
+    .container{
+        max-width:360px!important;
+        margin:0;
+    }
+
+    main > * {
+        max-width: 360px;
+    }
+    .container-card {
+        flex-direction: column;
+    }
+
+    .card {
+        max-width: 360px;
+    }
+}
